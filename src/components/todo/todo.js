@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { SettingsContext } from '../../context/settings.js';
 import useForm from '../../hooks/form.js';
-import blueprint from 'blueprintjs';
+
 
 import { v4 as uuid } from 'uuid';
 
 const ToDo = () => {
 
+  const { settings, setSettings } = useContext(SettingsContext);
   const [list, setList] = useState([]);
   const [incomplete, setIncomplete] = useState([]);
   const { handleChange, handleSubmit } = useForm(addItem);

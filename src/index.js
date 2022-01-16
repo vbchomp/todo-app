@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import blueprint from 'blueprintjs';
 
 import App from './app.js';
+
+// function Main() {
+
+//   return (
+//     <App />
+//   )
+// }
 
 class Main extends React.Component {
   render() {
